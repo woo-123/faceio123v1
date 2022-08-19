@@ -2,7 +2,7 @@
         botonL = document.getElementById('authenticate');
         const faceio = new faceIO("https://appservice123.azurewebsites.net");
 
-        enroll.addEventListener("click", async () => {
+        botonR.addEventListener("click", async () => {
             let response = await faceio.enroll({
               locale: "auto",
               payload: {
@@ -17,7 +17,7 @@
           });
 
 
-          authenticate.addEventListener("click", async () => {
+          botonL.addEventListener("click", async () => {
             let response = await faceio.authenticate({
               locale: "auto",
             });
